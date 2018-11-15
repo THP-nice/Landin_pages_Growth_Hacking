@@ -5,9 +5,6 @@ class StaticPagesController < ApplicationController
   def employment
   end
 
-  def students
-  end
-  	
-  def index
+  def city
   end
 end
