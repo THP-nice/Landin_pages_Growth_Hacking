@@ -83,3 +83,24 @@ header.masthead {
   background-position:center center;
   background-size:cover
 }
+
+.container-form {
+  border-radius: 5px;
+  background-color: transparent;
+  padding: 20px;
+  display: inline-block;
+}
+
+.margin-header {
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+}
+
+.margin-header-bis {
+margin-top: 150px;
+}
+
+.newsletter {
+border: 1px solid #ffd11a;
+}

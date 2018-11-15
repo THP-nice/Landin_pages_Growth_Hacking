@@ -50,3 +50,15 @@ Nous croyons dur comme fer que seul on va plus vite, ensemble on va plus loin. V
     </div>
   </div>
 </div>
+
+<div class="newsletter">
+<h2 class="text-center margin-header">Inscris-toi à notre newsletter !</h2>
+<div class="container-form margin-header">
+ <%= form_tag('/subscribe', method: "post", id: "subscribe", remote: "true") do -%>
+   <div class="form-group">
+     <%= email_field(:email, :address, {id: "email", placeholder: "Email"}) %>
+     <%= submit_tag("Submit!") %>
+     <% end %>
+   </div>
+</div>
+</div>
