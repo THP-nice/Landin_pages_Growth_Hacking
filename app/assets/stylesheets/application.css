@@ -42,3 +42,15 @@ color: black;
   background-size: cover;
 }
 
+.alpha {
+  margin: 50px 0px;	
+}
+
+.beta {
+  margin: 20px 0px;
+  font-size: 1.1em;
+}
+
+.tango {
+  font-size: 1.1em;	
+}
