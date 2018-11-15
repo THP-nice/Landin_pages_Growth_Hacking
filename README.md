@@ -1,6 +1,6 @@
 ## THP Landing Pages
 
-Voici notre contribution à la campagne de com de THP, dans le cadre du projet validant "Front End Design & Rails" de la Semaine 7. Cette app est réalisée en RoR / PostgreSQL, et déployée sur Heroku, [ici](https://thehacking-project.herokuapp.com). Elle propose un récap de la formation, les notions qui y sont abordées, les sessions à venir pour la ville de Nice (ville cible). Elle donne également la possibilité de s'inscire à une newsletter, unique et exceptionnelle, qui devrait permettre d'acquérir de nouveaux moussaillons chez notre public cible : les inactifs.
+Voici notre contribution à la campagne de com de THP, dans le cadre du projet validant "Front End Design & Rails" de la Semaine 7. Cette app est réalisée en RoR / PostgreSQL, et déployée sur [Heroku](https://thehacking-project.herokuapp.com). Elle propose un récap de la formation, les notions qui y sont abordées, les sessions à venir pour la ville de Nice (ville cible). Elle donne également la possibilité de s'inscire à une newsletter, unique et exceptionnelle, qui devrait permettre d'acquérir de nouveaux moussaillons chez notre public cible : les inactifs.
 
 ### Template
 Le site a été conçu avec le template "Agency", trouvé sur [startbootstrap](https://startbootstrap.com/template-overviews/agency/). Ce template super design est la base de nos trois views / LP.
@@ -26,7 +26,7 @@ A travers une méthode nécessitant les clés API de Mailchimp et l'id de la lis
 Enfin, afin d'analyser si ce site de com a convaincu les inactifs en quête d'activité, un metrics via Google Analytics a été déployé dans le head de l'application. Cela nous permet de suivre l'activité du site en temps réel. Point de difficulté, création d'une app sur Google, lien avec l'app heroku et tada, metrics.
 
 ### Tests
-Avec tout ce formidable travail de back et front end, quelques tests ont été réalisé, histoire de dire.
+Avec tout ce formidable travail de back et front end, quelques tests ont été réalisés, histoire de dire. Principalement, sur la redirection des différents liens du site.
 
 ### Contributions
 Réalisation par la team de Nice :
