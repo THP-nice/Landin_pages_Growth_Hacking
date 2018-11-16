@@ -10,21 +10,27 @@
       <div class="carousel-item active" style="background-image: url('https://source.unsplash.com/LJ9KY8pIH3E/1920x1080')">
         <div class="carousel-caption d-none d-md-block">
           <h3 class="display-4">Devenez Developpeur Web <br> en moins de 3 mois !</h3>
-          <p class="lead">Vous êtes demandeur d'emploi ? Vous songez à une reconversion professionnelle ou à vous lancer dans l'entreprenariat ? Inscrivez-vous vite à The Hacking Project et bénéficiez d'une formation web gratuite et qualitative !</p>
+          <p class="lead">Vous êtes demandeur d'emploi ? Vous songez à une reconversion
+          professionnelle ou à vous lancer dans l'entreprenariat ? Inscrivez-vous vite
+          à The Hacking Project et bénéficiez d'une formation web gratuite et qualitative !</p>
         </div>
       </div>
       <!-- Slide Two - Set the background image for this slide in the line below -->
       <div class="carousel-item" style="background-image: url('https://source.unsplash.com/OVbeSXRk_9E/1920X1080')">
         <div class="carousel-caption d-none d-md-block">
           <h3 class="display-4" style="color: white!important;">Apprenez à coder depuis <br> votre canapé !</h3>
-          <p class="lead">The Hacking Project est une formation intensive qui vous permet d'apprendre à coder en toute autonomie, sans aucune contrainte géographique, et sans se déplacer. Apprendre à coder devant votre cappucino en terrasse, c'est désormais possible avec THP !</p>
+          <p class="lead">The Hacking Project est une formation intensive qui vous permet d'apprendre à coder
+          en toute autonomie, sans aucune contrainte géographique, et sans se déplacer. Apprendre à coder
+          devant votre cappucino en terrasse, c'est désormais possible avec THP !</p>
         </div>
       </div>
       <!-- Slide Three - Set the background image for this slide in the line below -->
       <div class="carousel-item" style="background-image: url('https://source.unsplash.com/73_kRzs9sqo/1920x1080')">
         <div class="carousel-caption d-none d-md-block">
           <h3 class="display-4">Une formation gratuite et communautaire !</h3>
-          <p class="lead">Contrairement à la majorité des Bootcamps, The Hacking Project est une formation gratuite. La notion de communauté est essentielle au sein de THP : seul, on va plus vite mais à plusieurs, on va plus loin !</p>
+          <p class="lead">Contrairement à la majorité des Bootcamps, The Hacking Project est une
+          formation gratuite. La notion de communauté est essentielle au sein de THP : seul,
+          on va plus vite mais à plusieurs, on va plus loin !</p>
         </div>
       </div>
     </div>
@@ -41,24 +47,33 @@
 <br>
 
 <div class="container alpha">
-  <div class="row justify-content-center"><div class="col-sm-8 text-center"><h3>Rejoignez The Hacking Project et trouvez un emploi en moins de 6 mois !</h3>
-    <p class="beta">The Hacking Project est une formation qui, en 3 mois, à plein temps, vous apportera les connaissances essentielles pour vous permettre de voir plus loin, et ainsi vous offrir la possibilité d'avoir toutes les cartes en main pour vous reconvertir professionnellement et/ou lancer votre start-up ! <br></p>
-
-<p class="tango">Vous appartenez à une nouvelle famille pendant votre session de formation.<br>
-Chez THP, vous travaillerez dur pour atteindre les objectifs que l'on vous fixera. Certains jours vous pourrez experimenter des journées de 14 heures de travail. Pour tenir le rythme, le groupe auquel vous appartiendrez devra être soudé et l'entre-aide sera indispensable !
-Nous croyons dur comme fer que seul on va plus vite, ensemble on va plus loin. Vous devrez donc vous retrouver quotidienement avec votre groupe pour travailler toute la journée ensemble.</p> 
+  <div class="row justify-content-center">
+    <div class="col-sm-8 text-center">
+      <h3>Rejoignez The Hacking Project et trouvez un emploi en moins de 6 mois !</h3>
+      <p class="beta">The Hacking Project est une formation qui, en 3 mois, à plein temps,
+      vous apportera les connaissances essentielles pour vous permettre de voir plus loin,
+      et ainsi vous offrir la possibilité d'avoir toutes les cartes en main pour vous
+      reconvertir professionnellement et/ou lancer votre start-up !</p>
+      <p class="tango">Vous appartenez à une nouvelle famille pendant votre session de formation.<br>
+      Chez THP, vous travaillerez dur pour atteindre les objectifs que l'on vous fixera.
+      Certains jours vous pourrez experimenter des journées de 14 heures de travail.
+      Pour tenir le rythme, le groupe auquel vous appartiendrez devra être soudé et l'entre-aide sera indispensable !
+      Nous croyons dur comme fer que seul on va plus vite, ensemble on va plus loin.
+      Vous devrez donc vous retrouver quotidienement avec votre groupe pour travailler toute la journée ensemble.</p> 
     </div>
   </div>
 </div>
 
-<div class="newsletter">
-<h2 class="text-center margin-header">Inscris-toi à notre newsletter !</h2>
-<div class="container-form margin-header">
- <%= form_tag('/subscribe', method: "post", id: "subscribe", remote: "true") do -%>
-   <div class="form-group">
-     <%= email_field(:email, :address, {id: "email", placeholder: "Email"}) %>
-     <%= submit_tag("Submit!") %>
-     <% end %>
-   </div>
-</div>
+<div>
+  <h2 class="text-center margin-header">Rejoignez le THP Club</h2>
+  <p class="text-center margin-header">Inscrivez-vous maintenant et profitez d'une remise de -10 %
+  sur votre prochaine session,<br>et soyez les premiers informés sur les nouveautés.</p>
+  <div class="container-form margin-header">
+    <%= form_tag('/subscribe', method: "post", id: "subscribe", class: "form-inline", remote: "true") do -%>
+    <div class="form-group">
+      <%= email_field(:email, :address, {id: "email", placeholder: "Email", class: "form-control", style: "margin-right: 10px;"}) %>
+      <%= submit_tag("Soumettre") %>
+    <% end %>
+    </div>
+  </div>
 </div>

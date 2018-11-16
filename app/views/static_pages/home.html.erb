@@ -31,7 +31,7 @@
         </span>
         <h4 class="service-heading">Vous êtes demandeur d'emploi ?</h4>
         <p class="text-muted">Nous sommes en partenariat avec le Pôle-Emploi
-        et vous proposons des formations totalement financés par ce dernier.</p>
+        et vous proposons des formations totalement financées par ce dernier.</p>
       </div>
       <div class="col-md-4">
         <span class="fa-stack fa-4x">
@@ -69,7 +69,7 @@
         </a>
         <div class="portfolio-caption">
           <h4>Movie Searchbox</h4>
-          <p class="text-muted">App rails qui intégre une fonction de recherche à travers l'utilisation d'une API.</p>
+          <p class="text-muted">App rails qui intègre une fonction de recherche à travers l'utilisation d'une API.</p>
         </div>
       </div>
       <div class="col-md-4 col-sm-6 portfolio-item">
@@ -97,7 +97,7 @@
         </a>
         <div class="portfolio-caption">
           <h4>Facebook style</h4>
-          <p class="text-muted">App rails avec service d'authentification et création d'une base de donnée avec PostGreSQL.</p>
+          <p class="text-muted">App rails avec service d'authentification et création d'une base de données avec PostGreSQL.</p>
         </div>
       </div>
       <div class="col-md-4 col-sm-6 portfolio-item">
@@ -125,7 +125,7 @@
         </a>
         <div class="portfolio-caption">
           <h4>Google Homepage</h4>
-          <p class="text-muted">Tu auras pour mission de refaire la page d'accueil du célébre Google.</p>
+          <p class="text-muted">Tu auras pour mission de refaire la page d'accueil du célèbre Google.</p>
         </div>
       </div>
       <div class="col-md-4 col-sm-6 portfolio-item">
@@ -383,32 +383,47 @@
 </section>
 
 <!-- Clients -->
-    <section class="py-5">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-3 col-sm-6">
-            <a href="#">
-              <%=image_tag 'logos/42.png', :alt => "", class: "img-fluid d-block mx-auto"%>
-            </a>
-          </div>
-          <div class="col-md-3 col-sm-6">
-            <a href="#">
-              <%=image_tag 'logos/pole-emploi.png', :alt => "", class: "img-fluid d-block mx-auto"%>
-            </a>
-          </div>
-          <div class="col-md-3 col-sm-6">
-            <a href="#">
-             <%=image_tag 'logos/france.jpg', :alt => "", class: "img-fluid d-block mx-auto"%>
-            </a>
-          </div>
-          <div class="col-md-3 col-sm-6">
-            <a href="#">
-              <%=image_tag 'logos/ecole-numerique.png', :alt => "", class: "img-fluid d-block mx-auto"%>
-            </a>
-          </div>
-        </div>
+<section class="py-5">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-3 col-sm-6">
+        <a href="#">
+          <%=image_tag 'logos/42.png', :alt => "", class: "img-fluid d-block mx-auto"%>
+        </a>
       </div>
-    </section>
+      <div class="col-md-3 col-sm-6">
+        <a href="#">
+          <%=image_tag 'logos/pole-emploi.png', :alt => "", class: "img-fluid d-block mx-auto"%>
+        </a>
+      </div>
+      <div class="col-md-3 col-sm-6">
+        <a href="#">
+          <%=image_tag 'logos/france.jpg', :alt => "", class: "img-fluid d-block mx-auto"%>
+        </a>
+      </div>
+      <div class="col-md-3 col-sm-6">
+        <a href="#">
+          <%=image_tag 'logos/ecole-numerique.png', :alt => "", class: "img-fluid d-block mx-auto"%>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Newsletter -->
+<div>
+  <h2 class="text-center margin-header">Rejoignez le THP Club</h2>
+  <p class="text-center margin-header">Inscrivez-vous maintenant et profitez d'une remise de -10 %
+  sur votre prochaine session,<br>et soyez les premiers informés sur les nouveautés.</p>
+  <div class="container-form margin-header">
+    <%= form_tag('/subscribe', method: "post", id: "subscribe", class: "form-inline", remote: "true") do -%>
+    <div class="form-group">
+      <%= email_field(:email, :address, {id: "email", placeholder: "Email", class: "form-control", style: "margin-right: 10px;"}) %>
+      <%= submit_tag("Soumettre") %>
+    <% end %>
+    </div>
+  </div>
+</div>
 
 <!-- Contact -->
 <section id="contact">
